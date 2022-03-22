@@ -13,6 +13,7 @@ cmake_policy(SET CMP0048 NEW)
 project(gam_g4)
 
 set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_FLAGS_RELEASE "-O2 -DNDEBUG")
 
 # Need Geant4
 find_package(Geant4 REQUIRED qt)
